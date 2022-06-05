@@ -1,0 +1,80 @@
+*{
+    font-family: 'Architects Daughter', cursive;
+    font-style: normal;
+    text-align: justify;
+}
+/*.contain{
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+}*/
+
+.contain {  display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr;
+    grid-template-rows: 0.2fr 1.2fr 1fr 1fr 1fr 1fr 1fr 1fr;
+    gap: 0px 0px;
+    grid-auto-flow: row;
+    margin: auto;
+    border-left: 1pt;
+    row-gap: 1pt;
+    column-gap: 1pt;
+    grid-template-areas:
+      "encabezado encabezado encabezado encabezado habilidades habilidades habilidades habilidades"
+      "informacion informacion informacion informacion habilidades habilidades habilidades habilidades"
+      "informacion informacion informacion informacion proyectos proyectos proyectos proyectos"
+      "informacion informacion informacion informacion enlaces enlaces enlaces enlaces"
+      "informacion informacion informacion informacion mas-info mas-info mas-info mas-info"
+      "informacion informacion informacion informacion donar donar donar donar"
+      "video video video video donar donar donar donar"
+      "video video video video donar donar donar donar";
+  }
+  
+  .encabezado { grid-area: encabezado;
+                background-image:url(https://i.pinimg.com/originals/3b/47/14/3b4714d704c6c7f95d40348cffd182ac.jpg)
+}
+   .encabezado .img{
+     
+   } 
+   .habilidades ul{
+       background-color: gray;
+       width: fit-content;
+       height: fit-content;
+       padding: 2%;
+   }
+   .proyectos table{
+        background-color: gray;
+        width: fit-content;
+        height: fit-content;
+        padding: 2%;
+   }
+   .uno table{
+        background-color: gray;
+        width: fit-content;
+        height: fit-content;
+        padding: 2%;
+   }
+  
+  .habilidades { grid-area: habilidades;}
+  
+  .proyectos { grid-area: proyectos; }
+  
+  .contacto { grid-area: enlaces; }
+  
+  .uno { grid-area: informacion; }
+  
+  .croquetas { grid-area: donar; }
+  
+  .croquetas .aboutSam { grid-area: video; }
+  
+.uno img{
+    border-radius: 50%;
+}
+
+.habilidades{
+    order: 2;
+}
+
+    
+h2{
+    color: aquamarine;
+}

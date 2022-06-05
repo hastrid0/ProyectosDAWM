@@ -1,0 +1,20 @@
+{
+  "name": "proyectosdawm",
+  "version": "1.0.0",
+  "description": "Astrid Parra",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start": "index.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/hastrid0/ProyectosDAWM.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/hastrid0/ProyectosDAWM/issues"
+  },
+  "homepage": "https://github.com/hastrid0/ProyectosDAWM#readme"
+}
