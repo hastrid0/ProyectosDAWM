@@ -1,0 +1,282 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8">
+    <title>MarvelZone</title>
+    <meta content="width=device-width, initial-scale=1.0" name="viewport">
+    <meta content="Free HTML Templates" name="keywords">
+    <meta content="Free HTML Templates" name="description">
+
+    <!-- Favicon -->
+    <link href="img/favicon.ico" rel="icon">
+
+    <!-- Google Web Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@400;600&family=Oswald:wght@500;600;700&family=Pacifico&display=swap" rel="stylesheet"> 
+
+    <!-- Icon Font Stylesheet -->
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.10.0/css/all.min.css" rel="stylesheet">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.4.1/font/bootstrap-icons.css" rel="stylesheet">
+
+    <!-- Libraries Stylesheet -->
+    <link href="lib/owlcarousel/assets/owl.carousel.min.css" rel="stylesheet">
+
+    <!-- Customized Bootstrap Stylesheet -->
+    <link href="css/bootstrap.min.css" rel="stylesheet">
+
+    <!-- Template Stylesheet -->
+    <link href="css/style.css" rel="stylesheet">
+    <script src="./ejercicio.js"></script>
+</head>
+
+<body>
+    <!-- Topbar Start -->
+    <div class="container-fluid px-0 d-none d-lg-block">
+        <div class="row gx-0">
+            <div class="col-lg-4 text-center bg-secondary py-3">     
+            </div>
+            <div class="col-lg-4 text-center bg-dark border-inner py-3">
+                <div class="d-inline-flex align-items-center justify-content-center">
+                    <a href="index.html" class="navbar-brand">
+                        <h1 class="m-0 text-uppercase text-white"></i>Marvel Heroes Zone</h1>
+                    </a>
+                </div>
+            </div>
+            <div class="col-lg-4 text-center bg-secondary py-3">
+                <div class="d-inline-flex align-items-center justify-content-center">
+                    <i class="bi bi-phone-vibrate fs-1 text-primary me-3"></i>
+                    <div class="text-start">
+                        <h6 class="text-uppercase mb-1">Don't Call Us, we see all</h6>
+                       
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- Topbar End -->
+
+
+    <!-- Navbar Start -->
+    <nav class="navbar navbar-expand-lg bg-dark navbar-dark shadow-sm py-3 py-lg-0 px-3 px-lg-0">
+        <a href="index.html" class="navbar-brand d-block d-lg-none">
+            <h1 class="m-0 text-uppercase text-white"><i class="fa fa-birthday-cake fs-1 text-primary me-3"></i>Mvzone</h1>
+        </a>
+        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarCollapse">
+            <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarCollapse">
+            <div class="navbar-nav ms-auto mx-lg-auto py-0">
+                <a href="index.html" class="nav-item nav-link active">Inicio</a>
+                <a href="about.html" class="nav-item nav-link">Acerca de</a>
+                <a href="menu.html" class="nav-item nav-link">Estadisticas</a>
+        
+            
+            </div>
+        </div>
+    </nav>
+    <!-- Navbar End -->
+
+
+    <!-- Hero Start -->
+    <div class="container-fluid bg-primary py-5 mb-5 hero-header" >
+        <div class="container py-5" >
+           <div class="col-md-4">
+
+           </div>
+            <div class="row justify-content-start">
+                <div class="col-lg-8 text-center text-lg-start" >
+                    <h1 class="font-secondary text-light mb-4">Super heroico</h1>
+                    <h1 class="display-1 text-uppercase text-white mb-4">Zona Marvel</h1>
+                    <h1 class="text-uppercase text-white">Personajes de comics</h1>
+                    <div class="d-flex align-items-center justify-content-center justify-content-lg-start pt-5">
+                
+                        <button type="button" class="btn-play" data-bs-toggle="modal"
+                            data-src="https://www.youtube.com/watch?v=zwZYVmTY-kI" data-bs-target="#videoModal">
+                            <span></span>
+                        </button>
+                        <h5 class="font-weight-normal text-white m-0 ms-4 d-none d-sm-block">Play Video</h5>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- Hero End -->
+
+
+    <!-- Video Modal Start -->
+    <div class="modal fade" id="videoModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+        <div class="modal-dialog">
+            <div class="modal-content rounded-0">
+                <div class="modal-header">
+                    <h5 class="modal-title" id="exampleModalLabel">Youtube Video</h5>
+                    <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                </div>
+                <div class="modal-body">
+                    <!-- 16:9 aspect ratio -->
+                    <div class="ratio ratio-16x9">
+                        <iframe class="embed-responsive-item" src="" id="video" allowfullscreen allowscriptaccess="always"
+                            allow="autoplay"></iframe>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- Video Modal End -->
+
+
+    <!-- About Start -->
+    <div class="container-fluid pt-5">
+        <div class="container">
+            <div class="section-title position-relative text-center mx-auto mb-5 pb-3" style="max-width: 600px;">
+                <h2 class="font-secondary">Dato Curiosos</h2>
+                <h1 class="display-4 text-uppercase">¿Quien tiene mas comics?</h1>
+            </div>
+            <div class="masVotado">
+                <img id= img01 class="w-100 h-100" src="img/about.jpg" style="object-fit: center;" >
+                <img id= img02 class="w-100 h-100" src="img/service.jpg" style="object-fit: center;">
+                <p>Conoce mas.. 
+                    <ul>
+                        <li id="nombre"></li>
+                        <li id=""></li>
+                        <li id=""></li>
+                        <li id=""></li>
+                    </ul>
+                </p>
+            </div>
+
+            
+            
+        </div>
+    </div>
+    <!-- About End -->
+
+
+    <!-- Facts Start -->
+    <div class="container-fluid bg-img py-5 mb-5">
+        <div class="container py-5">
+            <div class="row gx-5 gy-4">
+                <div class="col-lg-3 col-md-6">
+                    <div class="d-flex">
+                        <div class="bg border-inner d-flex align-items-center justify-content-center mb-3" style="width: 60px; height: 60px;">
+                            <i class="fa fa-star text-white"></i>
+                        </div>
+                        <div class="ps-4">
+                            <h6 class="text-light text-uppercase">Segundo lugar</h6>
+                            <h1 class="display-5 text-white mb-0" data-toggle="counter-up" id="secondPlace">text</h1>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-3 col-md-6">
+                    <div class="d-flex">
+                        <div class="bg border-inner d-flex align-items-center justify-content-center mb-3" style="width: 60px; height: 60px;">
+                            <i class="fa fa-users text-white"></i>
+                        </div>
+                        <div class="ps-4">
+                            <h6 class="text-light text-uppercase">Tercer lugar</h6>
+                            <h1 id="tercerLugar" class="display-5 text-white mb-0" data-toggle="counter-up" id="thirdPlace">text</h1>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-3 col-md-6">
+                    <div class="d-flex">
+                        <div class=" border-inner d-flex align-items-center justify-content-center mb-3" style="width: 60px; height: 60px;">
+                            <i class="fa fa-check text-white"></i>
+                        </div>
+                        <div class="ps-4">
+                            <h6 class="text-light text-uppercase">Cuarto lugar</h6>
+                            <h1 class="display-5 text-white mb-0" data-toggle="counter-up"id="fourthPlace">text</h1>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-3 col-md-6">
+                    <div class="d-flex">
+                        <div class="border-inner d-flex align-items-center justify-content-center mb-3" style="width: 60px; height: 60px;">
+                            <i class="fa fa-mug-hot text-white"></i>
+                        </div>
+                        <div class="ps-4">
+                            <h6 class="text-light text-uppercase">Quinto lugar</h6>
+                            <h1 class="display-5 text-white mb-0" data-toggle="counter-up" id="fifthPlace">text</h1>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- Facts End -->
+
+
+    <!-- Team Start -->
+    <div class="container-fluid py-5">
+        <div class="container">
+            <div class="section-title position-relative text-center mx-auto mb-5 pb-3" style="max-width: 600px;">
+                <h1 class="display-4 text-uppercase">Explora otros Héroes</h1>
+                <label id="options" for="order">Filtrar por nombre:  </label>
+                <select name="heroes-names" id="superOrder">
+                    <option>Orden descendente A a Z</option>
+                    <option>Orden ascendente Z a A</option>
+
+                </select>
+            </div>
+            <div class="row g-5">
+                <div class="col-lg-4 col-md-6">
+                    <div class="team-item">
+                        <div class="position-relative overflow-hidden">
+                            <img class="img-fluid w-100" src="img/team-1.jpg" alt="">
+                            <div class="team-overlay w-100 h-100 position-absolute top-50 start-50 translate-middle d-flex align-items-center justify-content-center">
+                                <div class="d-flex align-items-center justify-content-start">
+                                    <a class="btn btn-lg btn-primary btn-lg-square border-inner rounded-0 mx-1" href="#"></a>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="border-inner text-center p-4">
+                            <h4 class="text-uppercase text-white">Full Name</h4>
+                            <p class="text-white m-0">Designation</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-4 col-md-6">
+                    <div class="team-item">
+                        <div class="position-relative overflow-hidden">
+                            <img class="img-fluid w-100" src="img/team-2.jpg" alt="">
+                            <div class="team-overlay w-100 h-100 position-absolute top-50 start-50 translate-middle d-flex align-items-center justify-content-center">
+                                <div class="d-flex align-items-center justify-content-start">
+                                    <a class="btn btn-lg btn-primary btn-lg-square border-inner rounded-0 mx-1" href="#"></a>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="border-inner text-center p-4">
+                            <h4 class="text-uppercase text-white">Full Name</h4>
+                            <p class="text-white m-0">Designation</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-4 col-md-6">
+                    <div class="team-item">
+                        <div class="position-relative overflow-hidden">
+                            <img class="img-fluid w-100" src="img/team-3.jpg" alt="">
+                            <div class="team-overlay w-100 h-100 position-absolute top-50 start-50 translate-middle d-flex align-items-center justify-content-center">
+                                <div class="d-flex align-items-center justify-content-start">
+                                    <a class="btn btn-lg btn-primary btn-lg-square border-inner rounded-0 mx-1" href="#"></a>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="border-inner text-center p-4">
+                            <h4 class="text-uppercase text-primary">Full Name</h4>
+                            <p class="text-white m-0">Designation</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- Team End -->
+
+
+    <!-- Template Javascript -->
+   
+    
+</body>
+
+</html>
