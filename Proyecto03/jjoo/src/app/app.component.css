@@ -1,0 +1,23 @@
+
+main{
+    background-image:url("https://images.vexels.com/media/users/3/152780/raw/5fa636e1b79a6d6df816bfef8c0c89d4-fondo-de-cielo-de-nieve.jpg");
+}
+
+footer{
+    background-image:url("https://images.vexels.com/media/users/3/152780/raw/5fa636e1b79a6d6df816bfef8c0c89d4-fondo-de-cielo-de-nieve.jpg");
+}
+
+h2{
+    font-size:4rem;
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+    letter-spacing : 0.5rem;
+}
+
+h1{
+    font-size:3rem;
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+    text-align: center;
+    text-indent: 1rem;
+    word-spacing: normal;
+    
+}
