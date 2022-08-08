@@ -1,0 +1,8 @@
+.container{
+    display: flexbox;
+ 
+}
+.col #img{
+    width: 500rem;
+    height: 500rem;
+}
