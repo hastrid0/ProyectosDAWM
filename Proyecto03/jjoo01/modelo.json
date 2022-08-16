@@ -1,0 +1,39 @@
+{
+  "config": {
+    "locale": "en"
+  },
+  "model": {
+    "type": "Object",
+    "value": {
+      "cantidad_pruebas": {
+        "type": "incrementNumber",
+        "options": {
+          "from": 1
+        }
+      },
+      "nombre_prueba": {
+        "type": "faker",
+        "value": "random.words"
+      },
+      "puntaje_maximo": {
+        "type": "incrementNumber",
+        "options": {
+          "from": 0
+        }
+      },
+      "url_informacion": {
+        "type": "append",
+        "options": {"text": ".com"},
+        "value": {
+          "type": "faker",
+          "value": "random.words"
+        }
+      },
+      "disponible": {
+        "type": "faker",
+        "value": "date.between",
+        "options": ["1860-01-01", "2022-05-02"]
+      }
+    }
+  }
+}
