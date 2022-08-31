@@ -14,15 +14,16 @@ module.exports = (sequelize, DataTypes) => {
     }
   }
   sedes.init({
-    id: DataTypes.INTEGER,
+    id: {
+      type: DataTypes.INTEGER,
+      primaryKey: true
+    },
     nombre: DataTypes.STRING,
-    anio: DataTypes.INTEGER,
-    paisesParticipantes: DataTypes.STRING,
+    anio: DataTypes.STRING,
+    paisesParticipanes: DataTypes.INTEGER,
     atletas: DataTypes.INTEGER,
     paisGanador: DataTypes.STRING,
-    disciplinaNombre: DataTypes.STRING,
-
-    
+    paisAnfitrion: DataTypes.STRING
   }, {
     sequelize,
     modelName: 'sedes',
