@@ -19,7 +19,9 @@ module.exports = (sequelize, DataTypes) => {
     paisesParticipantes: DataTypes.STRING,
     atletas: DataTypes.STRING,
     paisGanador: DataTypes.STRING,
-    disciplinaNombre: DataTypes.STRING
+    paisAnfitrion: DataTypes.STRING,
+    descripcion: DataTypes.STRING,
+    url: DataTypes.STRING
   }, {
     sequelize,
     modelName: 'sede',
