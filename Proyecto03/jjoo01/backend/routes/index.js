@@ -75,6 +75,19 @@ router.get('/api/disciplinas/:id', function(req, res, next) {
   .catch(error => res.status(400).send(error))
 })
 
+//obtener cada disciplina por nombre
+router.get('/api/disciplinas/:nombre', function(req, res, next) {
+  let nmb = req.params.nombre;
+  Disciplinas.findOne({
+    where: {nombre:nmb}
+  }) 
+  .then(disciplinas => {
+      res.json(disciplinas);
+      console.log(mam)
+  })
+  .catch(error => res.status(400).send(error))
+})
+
 // api mascotas
 router.get('/api/mascotas', function(req, res, next) {
   Mascota.findAll({
@@ -118,17 +131,7 @@ router.get('/api/atletas', (req, res, next) => {
   .catch(err => console.log(err))
 
 });
-/*
-router.get('/api/atletas/:grupo', (req, res, next) => {
 
-  axios.get(`https://${myapp}-default-rtdb.firebaseio.com/atletas.json`)
-  .then( resAxios => {
-      res.json(resAxios.data)
-  })
-  .catch(err => console.log(err))
-
-});
-*/
 
 router.get("/api/atletas/:grupo", (req, res, next) => {
   const grup = req.params.grupo;
