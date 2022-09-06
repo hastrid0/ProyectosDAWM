@@ -27,6 +27,7 @@ router.get('/api/sedes', function(req, res, next) {
   .catch(error => res.status(400).send(error))
 })
 //Mostrar una sede
+/*
 router.get('/api/sedes/:nombre', function(req, res, next) {
   let ide = req.params.nombre;
   Sedes.findOne({
@@ -37,18 +38,22 @@ router.get('/api/sedes/:nombre', function(req, res, next) {
       console.log(mam)
   })
   .catch(error => res.status(400).send(error))
-})
-
-//Mostrar todas las ediciones
-router.get('/api/sedes', function(req, res, next) {
+})*/
+/*
+//Filtrar sedes por pais
+router.get('/api/sedes/:pais', function(req, res, next) {
+  let pas = req.params.pais;
+  console.log(pas)
   Sedes.findAll({
-    attributes: {exclude: ["updatedAt", "createdAt"] }
-  })
+    where: {paisAnfitrion:pas}
+  }) 
   .then(sedes => {
       res.json(sedes);
+      console.log(mam)
   })
   .catch(error => res.status(400).send(error))
 })
+*/
 
 
 // api disciplinas
@@ -70,13 +75,13 @@ router.get('/api/disciplinas/:id', function(req, res, next) {
   }) 
   .then(disciplinas => {
       res.json(disciplinas);
-      console.log(mam)
+   
   })
   .catch(error => res.status(400).send(error))
 })
 
 //obtener cada disciplina por nombre
-router.get('/api/disciplinas/:nombre', function(req, res, next) {
+router.get('/api/disciplinas/byName/:nombre', function(req, res, next) {
   let nmb = req.params.nombre;
   Disciplinas.findOne({
     where: {nombre:nmb}
